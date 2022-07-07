@@ -7,11 +7,9 @@
 
 import Foundation
 
-struct Entry: Identifiable {
-    
+struct Entry: Identifiable, Codable, Equatable {
     var title: String
     var body: String
     var date = Date()
     var id = UUID()
-    
 }
